@@ -1,0 +1,95 @@
+# vim: ft=toml
+[mgr]
+cwd = { fg = "#00988e" }
+
+hovered = { reversed = true }
+preview_hovered = { underline = true }
+
+find_keyword = { bold = true, fg = "#b1d8f6" }
+find_position = { fg = "#e1c0fa" }
+
+marker_copied = { fg = "#93b979", bg = "#93b979" }
+marker_cut = { fg = "#e27373", bg = "#e27373" }
+marker_selected = { fg = "#b1d8f6", bg = "#b1d8f6" }
+
+tab_inactive = { fg = "#d5d5d5" }
+tab_active = { fg = "#121212", bg = "#d5d5d5" }
+
+count_copied = { fg = "#121212", bg = "#93b979" }
+count_cut = { fg = "#121212", bg = "#e27373" }
+count_selected = { fg = "#121212", bg = "#b1d8f6" }
+
+border_style = { fg = "#97bedc" }
+
+[mode]
+normal_main = { fg = "#121212", bg = "#97bedc", bold = true }
+normal_alt = { fg = "#97bedc", bg = "#bdbdbd" }
+
+select_alt = { fg = "#e1c0fa", bg = "#bdbdbd" }
+select_main = { fg = "#121212", bg = "#e1c0fa", bold = true }
+
+unset_main = { fg = "#121212", bg = "#e27373", bold = true }
+unset_alt = { fg = "#e27373", bg = "#bdbdbd" }
+
+[status]
+perm_exec = { fg = "#93b979" }
+perm_read = { fg = "#b1d8f6" }
+perm_sep = { fg = "#00988e" }
+perm_type = { fg = "#97bedc" }
+perm_write = { fg = "#e27373" }
+
+progress_error = { fg = "#e27373", bg = "#121212" }
+progress_label = { fg = "#d5d5d5", bg = "#121212" }
+progress_normal = { fg = "#d5d5d5", bg = "#121212" }
+
+[pick]
+active = { fg = "#e1c0fa" }
+border = { fg = "#97bedc" }
+inactive = { fg = "#d5d5d5" }
+
+[task]
+title = { fg = "#97bedc" }
+border = { fg = "#97bedc" }
+hovered = { fg = "#d5d5d5", bg = "#bdbdbd" }
+
+[input]
+border = { fg = "#97bedc" }
+selected = { bg = "#bdbdbd" }
+
+[help]
+desc = { fg = "#d5d5d5" }
+on = { fg = "#00988e" }
+run = { fg = "#e1c0fa" }
+hovered = { reversed = true, bold = true }
+footer = { fg = "#bdbdbd", bg = "#d5d5d5" }
+
+[which]
+mask = { bg = "#bdbdbd" }
+desc = { fg = "#d5d5d5" }
+cand = { fg = "#00988e" }
+rest = { fg = "#713939" }
+
+separator_style = { fg = "#cdcdcd" }
+
+[notify]
+title_info = { fg = "#00988e" }
+title_warn = { fg = "#b1d8f6" }
+title_error = { fg = "#e27373" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#b1d8f6" },
+  { mime = "{audio, video}/*", fg = "#93b979" },
+
+  { mime = "application/{pdf,doc,rtf}", fg = "#d5d5d5" },
+
+  { mime = "application/" },
+
+  { mime = "inode/directory", fg = "#97bedc" },
+  { mime = "*", is = "link", fg = "#00988e" },
+  { mime = "*/", is = "link", fg = "#00988e" },
+  { mime = "*", is = "sock", fg = "#cdcdcd" },
+  { mime = "*", is = "char", fg = "#ffba7b" },
+  { mime = "*", is = "exec", fg = "#93b979" },
+  { mime = "*", fg = "#d5d5d5" },
+]
