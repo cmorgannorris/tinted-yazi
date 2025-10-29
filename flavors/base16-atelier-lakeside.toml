@@ -85,11 +85,11 @@ rules = [
 
   { mime = "application/" },
 
-  { mime = "inode/directory", fg = "#257fad" },
   { mime = "*", is = "link", fg = "#2d8f6f" },
-  { mime = "*/", is = "link", fg = "#2d8f6f" },
+  { mime = "inode/directory", is = "link", fg = "#2d8f6f" },
   { mime = "*", is = "sock", fg = "#7195a8" },
   { mime = "*", is = "char", fg = "#935c25" },
   { mime = "*", is = "exec", fg = "#568c3b" },
   { mime = "*", fg = "#7ea2b4" },
+  { mime = "inode/directory", fg = "#257fad" },
 ]

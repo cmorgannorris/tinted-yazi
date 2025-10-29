@@ -85,11 +85,11 @@ rules = [
 
   { mime = "application/{{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*},", fg = "#{{base04-hex}}" },
 
-  { mime = "inode/directory", fg = "#{{base0D-hex}}" },
   { mime = "*", is = "link", fg = "#{{base0C-hex}}" },
-  { mime = "*/", is = "link", fg = "#{{base0C-hex}}" },
+  { mime = "inode/directory", is = "link", fg = "#{{base0C-hex}}" },
   { mime = "*", is = "sock", fg = "#{{base04-hex}}" },
   { mime = "*", is = "char", fg = "#{{base09-hex}}" },
   { mime = "*", is = "exec", fg = "#{{base0B-hex}}" },
   { mime = "*", fg = "#{{base05-hex}}" },
+  { mime = "inode/directory", fg = "#{{base0D-hex}}" },
 ]
