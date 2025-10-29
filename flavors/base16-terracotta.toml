@@ -87,9 +87,9 @@ rules = [
 
   { mime = "*", is = "link", fg = "#847f9e" },
   { mime = "inode/directory", is = "link", fg = "#847f9e" },
+  { mime = "inode/directory", fg = "#625574" },
   { mime = "*", is = "sock", fg = "#59453d" },
   { mime = "*", is = "char", fg = "#bd6942" },
   { mime = "*", is = "exec", fg = "#7a894a" },
   { mime = "*", fg = "#473731" },
-  { mime = "inode/directory", fg = "#625574" },
 ]
